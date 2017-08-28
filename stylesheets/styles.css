@@ -8800,7 +8800,7 @@ p {
 }
 
 /* line 21, ../sass/styles.scss */
-.apresentacao {
+section {
   padding: 80px 0;
   text-align: center;
 }
@@ -8809,4 +8809,18 @@ p {
 .parallax-window {
   min-height: 400px;
   background: transparent;
+}
+
+/* line 31, ../sass/styles.scss */
+.parallax-window2 {
+  min-height: 400px;
+  background: transparent;
+  color: white;
+}
+
+/* line 37, ../sass/styles.scss */
+.copyright {
+  padding: 20px 0;
+  background: #3a3a3a;
+  color: rgba(255, 255, 255, 0.78);
 }

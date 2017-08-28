@@ -18,7 +18,7 @@ p{
 }
 
 //Sections
-.apresentacao{
+section{
 	padding:80px 0;
 	text-align: center;
 }
@@ -26,4 +26,16 @@ p{
 .parallax-window{
 	min-height: 400px;
     background: transparent;
+}
+
+.parallax-window2{
+	min-height: 400px;
+    background: transparent;
+    color:white;
+}
+
+.copyright{
+	padding:20px 0;
+	background: #3a3a3a;
+	color:rgba(255,255,255, .78);	
 }

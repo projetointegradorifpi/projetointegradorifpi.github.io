@@ -61,18 +61,17 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-	
-	<div class="slides">
+
+	<!-- <div class="slides">
 	
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
+		  
 		  <ol class="carousel-indicators">
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
 		  </ol>
 
-		  <!-- Wrapper for slides -->
+		  <
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
 		      <img src="images/0010.jpeg" alt="...">
@@ -89,7 +88,7 @@
 		    ...
 		  </div>
 
-		  <!-- Controls -->
+		  
 		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
@@ -100,6 +99,10 @@
 		  </a>
 		</div>
 
+	</div> -->
+
+	<div class="parallax-window">
+		
 	</div>
 
 	<section class="container apresentacao">
@@ -118,7 +121,41 @@
 		</div>
 	</section>
 
-	<section class="parallax-window" data-parallax="scroll" data-image-src="./images/ifpi.jpg"></section>
+	<section class="parallax-window2">
+		<span>Fases do Projeto</span>
+		<h1>Nosso Cronograma</h1>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h4>Pesquisa das Tecnologias de Informação e Comunicação</h4>
+
+					<h4>Apresentação do Projeto</h4>
+				</div>
+
+				<div class="col-md-4">
+					<h4>Pesquisa de Unidades Escolores Estaduais</h4>
+
+					<h4>Definição das TICs a serem utilizadas e suas metodologias</h4>
+
+				</div>
+
+				<div class="col-md-4">
+					<h4>Apresentação do Projeto na escola selecionada</h4>
+
+					<h4>Apresentação do Projeto Integrador</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container">
+		<div class="row">	
+			<span>Apresentações</span>
+			<h1>Atividades do Projeto 2017.1</h1>
+		</div>
+	</section>
 
 	<footer>
 		<section class="container">
@@ -129,7 +166,13 @@
 			</div>
 		</section>
 	</footer>
-
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				Todos os direitos reservados IFPI. 2017.
+			</div>
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	
@@ -140,7 +183,9 @@
 	<script src="javascripts/parallax.min.js"></script>
 
 	<script type="text/javascript">
-		
+		$('.parallax-window').parallax({imageSrc: './images/ifpi.jpg'});
+
+		$('.parallax-window2').parallax({imageSrc: './images/ifpi2.jpg'});
 	</script>
 </body>
 </html>

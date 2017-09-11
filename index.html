@@ -126,7 +126,7 @@
 
 	<section class="parallax-window2">
 		<span>Fases do Projeto</span>
-		<h1>Nosso Cronograma</h1>
+		<h1 class="section-title">Nosso Cronograma</h1>
 
 		<div class="container">
 			<div class="row">
@@ -155,7 +155,7 @@
 	<section class="container">
 		<div class="row">	
 			<span>Blog</span>
-			<h1>Acompanhe nossas atividades</h1>
+			<h1 class="section-title">Acompanhe nossas atividades</h1>
 			
 			<div class="row blog">
 				
@@ -198,14 +198,51 @@
 		</div>
 	</section>
 
-	<section class="container">
-		<div class="row">	
-			<span>Apresentações</span>
-			<h1>Atividades do Projeto 2017.1</h1>
+	<section class="parallax-window3">
+		<div class="container apresentacoes">
+			<div class="row">	
+				<span>Apresentações</span>
+				<h1 class="section-title">Atividades do Projeto 2017.1</h1>
+
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#"><img src="./images/projeto001.jpg" class="img-responsive"></a>
+						<a href="#"><h3>Matéria e seus Estados Físicos</h3></a>
+					</div>
+
+					<div class="col-md-4">
+						<a href="#"><img src="./images/projeto002.jpg" class="img-responsive"></a>
+						<a href="#"><h3>Uso de Simulações Online no Ensino de Física</h3></a>
+					</div>
+
+					<div class="col-md-4">
+						<a href="#"><img src="./images/projeto001.jpg" class="img-responsive"></a>
+						<a href="#"><h3>Matéria e seus Estados Físicos</h3></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<footer>
+	<section class="galeria">
+		<div class="row">
+			<span>galeria</span>
+			<h1 class="section-title">Melhores Momentos</h1>
+		</div>
+		<div class="slideshow" 
+		    data-cycle-fx=carousel
+		    data-cycle-timeout=2000
+		    >
+		    <img src="./images/001mini.jpeg">
+		    <img src="./images/002mini.jpeg">
+		    <img src="./images/003mini.jpeg">
+		    <img src="./images/004mini.jpeg">
+		    <img src="./images/005mini.jpeg">
+		    <img src="./images/0010mini.jpeg">
+		</div>	
+	</section>
+
+	<!-- <footer>
 		<section class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -213,7 +250,7 @@
 				</div>
 			</div>
 		</section>
-	</footer>
+	</footer> -->
 	<div class="copyright">
 		<div class="container">
 			<div class="row">
@@ -229,11 +266,18 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<script src="javascripts/parallax.min.js"></script>
-
+	
+	<script type="text/javascript" src="javascripts/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.cycle2.carousel.min.js"></script>
 	<script type="text/javascript">
 		$('.parallax-window').parallax({imageSrc: './images/ifpi.jpg'});
 
 		$('.parallax-window2').parallax({imageSrc: './images/ifpi2.jpg'});
+
+		$('.parallax-window3').parallax({imageSrc: './images/ifpi.jpg'});
+	</script>
+	<script type="text/javascript">
+		$.fn.cycle.defaults.autoSelector = '.slideshow';
 	</script>
 </body>
 </html>
